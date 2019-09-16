@@ -6,7 +6,6 @@ Created On: 16 Sep,2019
 Last Modified: Today 5 minutes ago
 */
 // Vendors and external stylesheets
-@import "vendors/bootstrap";
 @import "vendors/font-awesome";
 @import "vendors/animate";
 
@@ -31,3 +30,6 @@ Last Modified: Today 5 minutes ago
 
 // Page-specific stylesheets
 @import "pages/welcome";
+@import "pages/signUp";
+@import "pages/signIn";
+@import "pages/forgotPass";

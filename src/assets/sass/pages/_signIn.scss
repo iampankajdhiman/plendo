@@ -1,0 +1,113 @@
+app-sign-in {
+    background: $color-brand;
+
+    &.ion-page {
+        background: $color-brand;
+    }
+
+    ion-row {
+        height: 100%;
+
+        ion-col {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0;
+
+            ion-content {
+                background: $color-brand;
+                --background: $color-brand;
+                --padding-top: 40px;
+                --padding-bottom: 10px;
+                --padding-start: 30px;
+                --padding-end: 30px;
+            }
+
+            figure {
+                display: block;
+                text-align: center;
+                width: 125px;
+                height: 160px;
+                margin: 0 auto 25px;
+
+                svg {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+            }
+
+            .btn {
+                width: 100%;
+                margin-bottom: em(15);
+            }
+
+            p {
+                font-size: 100%;
+                margin: 0 0 10px;
+                text-align: center;
+                color: #fff;
+                font-weight: 300;
+
+                a {
+                    color: $color-secondary;
+                }
+
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+
+                &.small{
+                    font-size: 70%;
+                }
+            }
+
+            form {
+                div {
+                    background: #fff;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    margin-bottom: 20px;
+                    &.no-bg{
+                        box-shadow: none;
+                        border-radius: 0px;
+                    }
+                }
+
+                ion-item {
+                    --padding-top: 0px;
+                    --padding-bottom: 0px;
+                    --padding-start: 0px;
+                    --padding-end: 0px;
+                    --inner-padding-end: 0px;
+                    ion-input,
+                    ion-input.sc-ion-input-ios-h {
+                        margin: 0;
+                        padding: 0;
+                        --margin: 0;
+                        --padding-top: 2px;
+                        --padding-bottom: 2px;
+                        --padding-start: 20px !important;
+                        --padding-end: 15px;
+                        height: 60px;
+                        width: 100%;
+                        color: #000;
+                        font-weight: 400;
+                        font-size: 100%;
+                        --placeholder-color: #000;
+                        --placeholder-font-style: normal;
+                        --placeholder-font-weight: 400;
+                        --placeholder-opacity: 1;
+                    }
+
+                    p{
+                        font-size: 70%;
+                        padding: 0 15px;
+                    }
+                }
+            }
+
+        }
+    }
+}

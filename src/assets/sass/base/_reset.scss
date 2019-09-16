@@ -151,22 +151,3 @@ p {
 .relative {
 	position: relative;
 }
-
-//Scrollbar styling for webkit
-::-webkit-scrollbar {
-	min-width: 4px;
-	width: 0.15%;
-	max-width: 4px;
-	height: 3px;
-}
-
-::-webkit-scrollbar,
-::-webkit-scrollbar-track,
-::-webkit-scrollbar-track-piece {
-	background: #171719;
-}
-
-::-webkit-scrollbar-button,
-::-webkit-scrollbar-thumb {
-	background: rgba(63, 174, 181,0.9);
-}

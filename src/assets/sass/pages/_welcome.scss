@@ -1,0 +1,54 @@
+app-welcome{
+    background: $color-brand;
+    &.ion-page{
+        background: $color-brand;
+    }
+
+    ion-row{
+        height: 100%;
+        ion-col{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding:0;
+            ion-content{
+                background: $color-brand;
+                --background: $color-brand;
+                --padding-top: 40px;
+                --padding-bottom: 10px;
+                --padding-start: 30px;
+                --padding-end: 30px;
+            }
+            figure{
+                display: block;
+                text-align: center;
+                width:160px;
+                height: 250px;
+                margin: 0 auto 15px;
+                svg{
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+            }
+
+                .btn{
+                    width: 100%;
+                    margin-bottom: em(15);
+                }
+
+                p{
+                    font-size: 100%;
+                    margin: 0;
+                    text-align: center;
+                    color: #fff;
+                    font-weight: 300;
+                    a{
+                        color: $color-secondary;
+                    }
+                }
+
+        }
+    }
+}

@@ -4,6 +4,7 @@ body {
     font-family: $sans-serif;
     font-weight: 400;
     line-height: 1.6;
+    letter-spacing: 0.01em;
     font-size: $base-font-size + px;
     color: $color-text;
 }
@@ -36,8 +37,17 @@ p{
 
     a{
         color: #000;
+        text-decoration: none;
         &:hover, &:focus{
             color: $color-secondary;
         }
     }
+}
+
+.text-center{
+    text-align: center;
+}
+
+.no-bg{
+    background: transparent !important;
 }
