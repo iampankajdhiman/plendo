@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700&display=swap');
+
+body {
+    font-family: $sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: $base-font-size + px;
+    color: $color-text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+    margin: 0 0 25px;
+}
+
+
+
+p{
+    font-size: em(16);
+    font-family: $sans-serif;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: $color-text;
+
+
+    strong {
+        font-weight: 700;
+    }
+
+    a{
+        color: #000;
+        &:hover, &:focus{
+            color: $color-secondary;
+        }
+    }
+}
