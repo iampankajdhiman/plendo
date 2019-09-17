@@ -1,6 +1,7 @@
 .btn,
 ion-button,
-.button, .button-native {
+.button,
+.button-native {
     display: inline-block;
     width: 100%;
     height: 60px;
@@ -18,13 +19,57 @@ ion-button,
     box-shadow: none;
     --box-shadow: none;
     padding: 0px;
-        --padding: 0px;
+    --padding: 0px;
     text-transform: capitalize;
     line-height: 1;
     --line-height: 1;
     letter-spacing: 0.02em;
     margin: 0;
     --margin: 0;
+
+    &.btn-small {
+        height: 40px;
+        font-size: 100%;
+    }
+
+    &.btn-border {
+        background: transparent;
+        --background: transparent;
+        border: solid 1px #000;
+        color: #000;
+    }
+
+    &.btn-red {
+        color: #f00;
+        border-color: #f00;
+
+        &:hover,
+        &:focus,
+        &.activated {
+            background: darken($color: #f00, $amount: 8);
+            --background: darken($color: #f00, $amount: 8);
+            --background-activated: darken($color: #f00, $amount: 8);
+            color: #fff;
+            --color: #fff;
+        }
+    }
+
+    &.btn-green {
+        background: #08B250;
+        --background: #08B250;
+        color: #fff;
+        --color: #fff;
+
+        &:hover,
+        &:focus,
+        &.activated {
+            background: darken($color: #08B250, $amount: 8);
+            --background: darken($color: #08B250, $amount: 8);
+            --background-activated: darken($color: #08B250, $amount: 8);
+            color: #fff;
+            --color: #fff;
+        }
+    }
 
     &.btn-white {
         color: #000;
@@ -45,6 +90,16 @@ ion-button,
         background: #67CAD5;
         --color: #fff;
         --background: #67CAD5;
+
+        &:hover,
+        &:focus,
+        &.activated {
+            background: darken($color: #67CAD5, $amount: 8);
+            --background: darken($color: #67CAD5, $amount: 8);
+            --background-activated: darken($color: #67CAD5, $amount: 8);
+            color: #fff;
+            --color: #fff;
+        }
     }
 
     &.btn-yellow {
@@ -52,14 +107,25 @@ ion-button,
         background: #FFA614;
         --color: #fff;
         --background: #FFA614;
+
+        &:hover,
+        &:focus,
+        &.activated {
+            background: darken($color: #FFA614, $amount: 8);
+            --background: darken($color: #FFA614, $amount: 8);
+            --background-activated: darken($color: #FFA614, $amount: 8);
+            color: #fff;
+            --color: #fff;
+        }
     }
 
-    img{
+    img {
         max-width: 25px;
         height: auto;
     }
 
-    ion-icon, img{
+    ion-icon,
+    img {
         display: inline-block;
         vertical-align: 0px;
         margin-right: 5px;
